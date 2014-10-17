@@ -1,4 +1,4 @@
-_youtube-video-slider
+Youtube-video-slider
 =====================
 
 Playlist for youtube videos. 
