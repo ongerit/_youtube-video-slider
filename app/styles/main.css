@@ -4,13 +4,31 @@ body {
     background: #ddd;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.title {
+    width: 100%;
+    max-width: 854px;
+    margin: 0 auto;
+}
+
+.caption {
+    width: 100%;
+    max-width: 854px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.container {
     width: 100%;
     max-width: 854px;
     min-width: 440px;
     background: #fff;
     margin: 0 auto;
 }
+
+
+/*  VIDEO PLAYER CONTAINER
+############################### */
 .vid-container {
     position: relative;
     padding-bottom: 52%;
@@ -28,6 +46,9 @@ body {
     height: 100%;
 }
 
+
+/*  VIDEOS PLAYLIST
+ ############################### */
 .vid-list-container {
     width: 92%;
     overflow: hidden;
@@ -37,21 +58,25 @@ body {
 }
 
 .vid-list {
-    width: 1344px;
+    width: 10048px;
     position: relative;
     top:0;
     left: 0;
 }
+
 .vid-item {
     display: block;
     width: 148px;
     height: 148px;
     float: left;
-    margin: 0;
+    margin: 0 5px 0 0 ;
     padding: 10px;
+    background: #FF6700;
 }
 
+
 .thumb {
+    /*position: relative;*/
     overflow:hidden;
     height: 84px;
 }
@@ -60,14 +85,23 @@ body {
     width: 100%;
     position: relative;
     top: -13px;
-    cursor: pointer;
 }
 
 .vid-item .desc {
-    color: #21A1D2;
+    color: #ffffff;
     font-size: 15px;
     margin-top:5px;
 }
+
+.vid-item:hover {
+    background: #2C2C2C;
+    cursor: pointer;
+}
+
+.vid-item:focus{
+    background: #2C2C2C;
+}
+
 .arrows {
     position:relative;
     width: 100%;
@@ -94,7 +128,28 @@ body {
     z-index:100;
     cursor: pointer;
 }
+
+.arrow-left:hover {
+    background: #FF6700;
+}
+
+.arrow-right:hover {
+    background: #FF6700;
+}
+
+
 @media (max-width: 624px) {
+    body {
+        margin: 15px;
+    }
+    .caption {
+        margin-top: 40px;
+    }
+    .vid-list-container {
+        padding-bottom: 20px;
+    }
+
+    /* reposition left/right arrows */
     .arrows {
         position:relative;
         margin: 0 auto;
@@ -102,11 +157,23 @@ body {
     }
     .arrow-left {
         left: 0;
-        top: -20px;
+        top: -17px;
     }
 
     .arrow-right {
         right: 0;
-        top: -20px;
+        top: -17px;
     }
+}
+
+  /*CSS TESTs*/
+
+.black{
+    background: black;
+}
+
+ul li{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
 }

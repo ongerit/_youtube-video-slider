@@ -9,94 +9,80 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-
-
-      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
       <!-- endbuild -->
   </head>
   <body>
 
-  <!--<div class="container">-->
-  <!--<div class="vid-container">-->
-      <!--<iframe-->
-              <!--id="vid_frame"-->
-              <!--src="http://www.youtube.com/embed/GHXd4_iYw1s?rel=0&showinfo=0&autohide=1"-->
-              <!--frameborder="0" width="560" height="315">-->
-      <!--</iframe>-->
-  <!--</div>-->
-<!--<div class="vid-list-container">-->
-  <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/GHXd4_iYw1s?autoplay=1&rel=0&showinfo=0&autohide=1'">-->
-      <!--<div class="thumb">-->
-          <!--<img src="http://img.youtube.com/vi/GHXd4_iYw1s/0.jpg">-->
-      <!--</div>-->
-      <!--<div class="desc">-->
-          <!--World's Toughest Mudder-->
-      <!--</div>-->
-  <!--</div>-->
-  <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/GHXd4_iYw1s?autoplay=1&rel=0&showinfo=0&autohide=1'">-->
-      <!--<div class="thumb">-->
-          <!--<img src="http://img.youtube.com/vi/GHXd4_iYw1s/0.jpg">-->
-      <!--</div>-->
-      <!--<div class="desc">-->
-          <!--World's Toughest Mudder-->
-      <!--</div>-->
-  <!--</div>-->
-  <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/GHXd4_iYw1s?autoplay=1&rel=0&showinfo=0&autohide=1'">-->
-      <!--<div class="thumb">-->
-          <!--<img src="http://img.youtube.com/vi/GHXd4_iYw1s/0.jpg">-->
-      <!--</div>-->
-      <!--<div class="desc">-->
-          <!--World's Toughest Mudder-->
-      <!--</div>-->
-  <!--</div>-->
-  <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/GHXd4_iYw1s?autoplay=1&rel=0&showinfo=0&autohide=1'">-->
-      <!--<div class="thumb">-->
-          <!--<img src="http://img.youtube.com/vi/GHXd4_iYw1s/0.jpg">-->
-      <!--</div>-->
-      <!--<div class="desc">-->
-          <!--World's Toughest Mudder-->
-      <!--</div>-->
-  <!--</div>-->
+  <div class="container">
+  <div class="vid-container">
+      <iframe
+              id="vid_frame"
+              src="http://www.youtube.com/embed/GHXd4_iYw1s?rel=0&showinfo=0&autohide=1"
+              frameborder="0" width="560" height="315">
+      </iframe>
+  </div>
+<div class="vid-list-container">
+    <div class="vid-list">
 
-  <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/GHXd4_iYw1s?autoplay=1&rel=0&showinfo=0&autohide=1'">-->
-      <!--<div class="thumb">-->
-          <!--<img src="http://img.youtube.com/vi/GHXd4_iYw1s/0.jpg">-->
-      <!--</div>-->
-      <!--<div class="desc">-->
-          <!--World's Toughest Mudder-->
-      <!--</div>-->
-  <!--</div>-->
-  <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/GHXd4_iYw1s?autoplay=1&rel=0&showinfo=0&autohide=1'">-->
-      <!--<div class="thumb">-->
-          <!--<img src="http://img.youtube.com/vi/GHXd4_iYw1s/0.jpg">-->
-      <!--</div>-->
-      <!--<div class="desc">-->
-          <!--World's Toughest Mudder-->
-      <!--</div>-->
-  <!--</div>-->
-  <!--</div>-->
-  <!--<div class="arrows">-->
-      <!--<div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>-->
-      <!--<div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>-->
-  <!--</div>-->
-
-
-<!--</div>-->
-
-
-  <pre id="response"></pre>
-  <pre id="test"></pre>
-
-
-
+  </div>
+  </div>
+</div>
+  <div class="arrows">
+      <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+      <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+  </div>
+  </div>
+  <ul class="cont" style="width=300px;display: inline;list-style-type: none; ">
+  </ul>
   <script type="text/javascript" src="scripts/main.js" ></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+
+      $(document).ready(function () {
+          $(".arrow-right").bind("click", function (event) {
+              event.preventDefault();
+              $(".vid-list-container").stop().animate({
+                  scrollLeft: "+=336"
+              }, 750);
+          });
+          $(".arrow-left").bind("click", function (event) {
+              event.preventDefault();
+              $(".vid-list-container").stop().animate({
+                  scrollLeft: "-=336"
+              }, 750);
+          });
+      });
+
+      var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/PLE9LPsE6cZ1YZW3Ev2JfKFzQUdPuMhdEl?v=2&alt=json&callback=?';
+      var videoURL= 'http://www.youtube.com/watch?v=';
+      $.getJSON(playListURL, function(data) {
+          var list_data="";
+          $.each(data.feed.entry, function(i, item) {
+              var feedTitle = item.title.$t;
+              var feedURL = item.link[1].href;
+              var fragments = feedURL.split("/");
+              var videoID = fragments[fragments.length - 2];
+              var url = videoURL + videoID;
+              var thumb = "http://img.youtube.com/vi/"+ videoID +"/1.jpg";
+              var videoSwitch = 'onClick=document.getElementById("vid_frame").src="http://youtube.com/embed/'+ videoID +'?autoplay=1&rel=0&showinfo=0&autohide=1"';
+              list_data += '<li class="vid-item" '+videoSwitch+'><div class="thumb"><img alt="'+ feedTitle +'" src="'+ thumb +'"> </div><div class="desc">'+ feedTitle+'</li>';
+
+          });
+          $(list_data).appendTo(".vid-list");
+      });
+
+  </script>
+
+
+  <!--<div class="vid-item" onClick="document.getElementById('vid_frame').src='http://youtube.com/embed/'+videoID+'?autoplay=1&rel=0&showinfo=0&autohide=1'">-->
+      <!--<div class="thumb">-->
+          <!--<img alt="'+ feedTitle+'" src="'+ thumb +'">-->
+      <!--</div>-->
+      <!--<div class="desc">-->
+          <!--'+ feedTitle+'-->
+      <!--</div>-->
 </body>
 </html>
