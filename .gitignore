@@ -8,4 +8,6 @@ bower_components
 .gitattributes
 .jshintrc
 .yo-rc.json
-.DS_Store
+.DS_Storeapp/
+.sass-cache/
+app/.sass-cache/
