@@ -5,18 +5,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.title {
-    width: 100%;
-    max-width: 854px;
-    margin: 0 auto;
-}
-
-.caption {
-    width: 100%;
-    max-width: 854px;
-    margin: 0 auto;
-    padding: 20px 0;
-}
 
 .container {
     width: 100%;
@@ -173,10 +161,6 @@ body {
 }
 
   /*CSS TESTs*/
-
-.black{
-    background: black;
-}
 
 ul li{
     display: inline;
