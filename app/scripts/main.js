@@ -1,0 +1,37 @@
+$(document).ready(function () {
+    function sliderArrows() {
+        $(".arrow-right").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "+=336"
+            }, 750);
+        });
+        $(".arrow-left").bind("click", function (event) {
+            event.preventDefault();
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=336"
+            }, 750);
+        });
+    };
+
+    function yApi() {
+        var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/PLE9LPsE6cZ1YZW3Ev2JfKFzQUdPuMhdEl?v=2&alt=json&callback=?';
+        var videoURL = 'http://www.youtube.com/watch?v=';
+        $.getJSON(playListURL, function (data) {
+            var list_data = "";
+            $.each(data.feed.entry, function (i, item) {
+                var feedTitle = item.title.$t;
+                var feedURL = item.link[1].href;
+                var fragments = feedURL.split("/");
+                var videoID = fragments[fragments.length - 2];
+                var url = videoURL + videoID;
+                var thumb = "http://img.youtube.com/vi/" + videoID + "/1.jpg";
+                var videoSwitch = 'onClick=document.getElementById("vid_frame").src="http://youtube.com/embed/' + videoID + '?autoplay=1&rel=0&showinfo=0&autohide=1"';
+                list_data += '<li class="vid-item" ' + videoSwitch + '><div class="thumb"><img alt="' + feedTitle + '" src="' + thumb + '"> </div><div class="desc">' + feedTitle + '</li>';
+            });
+            $(list_data).appendTo(".vid-list");
+        });
+    };
+    sliderArrows();
+    yApi()
+});
