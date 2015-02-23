@@ -29,6 +29,7 @@ $(document).ready(function () {
                 var videoSwitch = 'onClick=document.getElementById("vid_frame").src="http://youtube.com/embed/' + videoID + '?autoplay=1&rel=0&showinfo=0&autohide=1"';
                 list_data += '<li class="vid-item" ' + videoSwitch + '><div class="thumb"><img alt="' + feedTitle + '" src="' + thumb + '"> </div><div class="desc">' + feedTitle + '</li>';
             });
+            $(".vid-list").empty();
             $(list_data).appendTo(".vid-list");
             
         });
@@ -46,7 +47,6 @@ $(document).ready(function () {
         $(document).click(function() {
             $('#p1').click(function(){
             showList = true;
-            $(".vid-list").empty();
             playlistId= 'PLEpfh9jiEpYQJWMW2EF2PgCBhz2SQu6Ld';
             yApi(playlistId);
                 
@@ -54,7 +54,6 @@ $(document).ready(function () {
         
             $('#p2').click(function(){
             showList = true;
-            $(".vid-list").empty();
             playlistId= 'PLE9LPsE6cZ1YZW3Ev2JfKFzQUdPuMhdEl';
             yApi(playlistId);
                 
