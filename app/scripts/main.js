@@ -15,8 +15,8 @@ $(document).ready(function () {
     };
 
     function yApi() {
-        var playListURL = 'http://gdata.youtube.com/feeds/api/playlists/PLE9LPsE6cZ1YZW3Ev2JfKFzQUdPuMhdEl?v=2&alt=json&callback=?';
-        var videoURL = 'http://www.youtube.com/watch?v=';
+        var playListURL = 'https://gdata.youtube.com/feeds/api/playlists/PLE9LPsE6cZ1YZW3Ev2JfKFzQUdPuMhdEl?v=2&alt=json&callback=?';
+        var videoURL = 'https://www.youtube.com/watch?v=';
         $.getJSON(playListURL, function (data) {
             var list_data = "";
             $.each(data.feed.entry, function (i, item) {
@@ -25,7 +25,7 @@ $(document).ready(function () {
                 var fragments = feedURL.split("/");
                 var videoID = fragments[fragments.length - 2];
                 var url = videoURL + videoID;
-                var thumb = "http://img.youtube.com/vi/" + videoID + "/1.jpg";
+                var thumb = "https://img.youtube.com/vi/" + videoID + "/1.jpg";
                 var videoSwitch = 'onClick=document.getElementById("vid_frame").src="http://youtube.com/embed/' + videoID + '?autoplay=1&rel=0&showinfo=0&autohide=1"';
                 list_data += '<li class="vid-item" ' + videoSwitch + '><div class="thumb"><img alt="' + feedTitle + '" src="' + thumb + '"> </div><div class="desc">' + feedTitle + '</li>';
             });

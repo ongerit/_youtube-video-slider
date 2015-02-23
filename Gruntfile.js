@@ -14,7 +14,7 @@ module.exports = function (grunt) {
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
-
+    
     // Configurable paths
     var config = {
         app: 'app',
@@ -23,7 +23,7 @@ module.exports = function (grunt) {
 
     // Define the configuration for all the tasks
     grunt.initConfig({
-
+        
         // Project settings
         config: config,
 
@@ -185,21 +185,21 @@ module.exports = function (grunt) {
         // Reads HTML for usemin blocks to enable smart builds that automatically
         // concat, minify and revision files. Creates configurations in memory so
         // additional tasks can operate on them
-        useminPrepare: {
-            options: {
-                dest: '<%= config.dist %>'
-            },
-            html: '<%= config.app %>/index.html'
-        },
+        // useminPrepare: {
+        //     options: {
+        //         dest: '<%= config.dist %>'
+        //     },
+        //     html: '<%= config.app %>/index.html'
+        // },
 
-        // Performs rewrites based on rev and the useminPrepare configuration
-        usemin: {
-            options: {
-                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
-            },
-            html: ['<%= config.dist %>/{,*/}*.html'],
-            css: ['<%= config.dist %>/styles/{,*/}*.css']
-        },
+        //Performs rewrites based on rev and the useminPrepare configuration
+        // usemin: {
+        //     options: {
+        //         assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+        //     },
+        //     html: ['<%= config.dist %>/{,*/}*.html'],
+        //     css: ['<%= config.dist %>/styles/{,*/}*.css']
+        // },
 
         // The following *-min tasks produce minified files in the dist folder
         imagemin: {
@@ -361,10 +361,10 @@ module.exports = function (grunt) {
         'autoprefixer',
         'concat',
         'cssmin',
-        'uglify',
+        //'uglify',
         'copy:dist',
         'rev',
-        'usemin',
+        //'usemin',
         'htmlmin'
     ]);
 
