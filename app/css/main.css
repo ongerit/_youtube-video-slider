@@ -1,4 +1,267 @@
+@font-face {
+  font-family: 'ToughMudder';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/ToughMudderWeb.eot?") format("eot"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/ToughMudderWeb.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/ToughMudderWeb.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/ToughMudderWeb-final.svg") format("svg");
+}
+@font-face {
+  font-family: 'Geo-bold';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/geogtq-bd.eot?") format("eot"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/geogtq-bd.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/geogtq-bd.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/geogtq-bd.svg#geogtq_bd") format("svg");
+}
+@font-face {
+  font-family: 'Geo-semi';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/geogtq-sb.eot?") format("eot"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/geogtq-sb.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/geogtq-sb.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/geogtq-sb.svg#geogtq_sb") format("svg");
+}
+@font-face {
+  font-family: 'MuseoSlab-900';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_900.eot?") format("eot"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_900.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_900.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_900.svg#museo_slab900") format("svg");
+}
+@font-face {
+  font-family: 'MuseoSlab-500';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_500.eot?") format("eot"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_500.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_500.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_500.svg#museo_slab500") format("svg");
+}
+@font-face {
+  font-family: 'MuseoSlab-500-italic';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_500italic.eot?") format("eot"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_500italic.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_500italic.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_500italic.svg#museo_slab500italic") format("svg");
+}
+@font-face {
+  font-family: 'MuseoSlab-300';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_300.eot?") format("eot"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_300.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_300.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_300.svg#museo_slab300") format("svg");
+}
+@font-face {
+  font-family: 'MuseoSlab-300-italic';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_300italic.eot?") format("eot"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_300italic.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_300italic.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/museo_slab_300italic.svg#museo_slab300italic") format("svg");
+}
+@font-face {
+  font-family: 'proxima-nova';
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/proximanova-regular-webfont.eot");
+  src: url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/proximanova-regular-webfont.woff") format("woff"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/proximanova-regular-webfont.ttf") format("truetype"), url("https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/proximanova-regular-webfont.svg#proxima-nova") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 1, ../sass/main.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/main.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 1, ../sass/main.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 1, ../sass/main.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 1, ../sass/main.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 1, ../sass/main.scss */
+body {
+  margin: 0;
+}
+
+/* line 1, ../sass/main.scss */
+a {
+  background: transparent;
+}
+
+/* line 1, ../sass/main.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 1, ../sass/main.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 1, ../sass/main.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 1, ../sass/main.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 1, ../sass/main.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 1, ../sass/main.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 1, ../sass/main.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 1, ../sass/main.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 1, ../sass/main.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 1, ../sass/main.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 1, ../sass/main.scss */
+img {
+  border: 0;
+}
+
+/* line 1, ../sass/main.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 1, ../sass/main.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 1, ../sass/main.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 1, ../sass/main.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 1, ../sass/main.scss */
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+/* line 1, ../sass/main.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 1, ../sass/main.scss */
+button {
+  overflow: visible;
+}
+
+/* line 1, ../sass/main.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 1, ../sass/main.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/main.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 1, ../sass/main.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/main.scss */
+input {
+  line-height: normal;
+}
+
+/* line 1, ../sass/main.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 1, ../sass/main.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 1, ../sass/main.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 1, ../sass/main.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 1, ../sass/main.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 1, ../sass/main.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 1, ../sass/main.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 1, ../sass/main.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 1, ../sass/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../sass/main.scss */
+td, th {
+  padding: 0;
+}
+
+/* line 3, ../sass/main.scss */
 body {
   margin: 30px;
   padding: 0;
@@ -6,7 +269,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* line 8, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
 .video-wrapper {
   width: 100%;
   max-width: 854px;
@@ -17,7 +280,7 @@ body {
 
 /*  VIDEO PLAYER CONTAINER
 ############################### */
-/* line 19, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 .vid-container {
   position: relative;
   padding-bottom: 52%;
@@ -25,7 +288,7 @@ body {
   height: 0;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 .vid-container iframe,
 .vid-container object,
 .vid-container embed {
@@ -38,118 +301,138 @@ body {
 
 /*  VIDEOS PLAYLIST
  ############################### */
-/* line 38, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .vid-list-container {
-  width: 92%;
+  width: 95%;
   overflow: hidden;
   margin-top: 20px;
-  margin-left: 4%;
+  margin-left: 3%;
   padding-bottom: 20px;
 }
-/* line 45, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .vid-list-container .vid-list {
   width: 10048px;
   position: relative;
   top: 0;
   left: 0;
 }
-/* line 51, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .vid-list-container .vid-item {
   display: block;
-  width: 148px;
-  height: 148px;
+  width: 190px;
+  height: 150px;
   float: left;
-  margin: 0 5px 0 0;
-  padding: 10px;
-  background: #FF6700;
+  margin: 0 15px 0 0;
+  background: #000;
 }
-/* line 60, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .vid-list-container .thumb {
   overflow: hidden;
-  height: 84px;
+  height: 98px;
 }
-/* line 63, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .vid-list-container .thumb img {
   width: 100%;
   position: relative;
   top: -13px;
 }
 
-/* line 73, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .vid-item .desc {
+  font-family: 'Toughmudder', sans-serif;
   color: #ffffff;
-  font-size: 15px;
-  margin-top: 5px;
+  font-size: 1.5em;
+  margin: 5px 0 5px 5px;
+  line-height: 1.1em;
 }
-/* line 79, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .vid-item:hover {
   background: #2C2C2C;
   cursor: pointer;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .arrows {
   position: relative;
   width: 100%;
 }
-/* line 89, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .arrows .arrow-left, .arrows .arrow-right {
   position: absolute;
   background: #777;
   color: #fff;
   cursor: pointer;
-  padding: 15px;
-  top: -130px;
+  padding: 5px;
+  top: -170px;
+  height: 150px;
 }
-/* line 96, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .arrows .arrow-left:hover, .arrows .arrow-right:hover {
   background: #FF6700;
 }
-/* line 100, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
+.arrows .arrow-left .fa-lg, .arrows .arrow-right .fa-lg {
+  line-height: 4.0em;
+  font-size: 2.5em;
+}
+/* line 108, ../sass/main.scss */
 .arrows .arrow-left {
   left: -25px;
-  top: -130px;
   z-index: 99;
 }
-/* line 105, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .arrows .arrow-right {
   right: -25px;
   z-index: 100;
 }
 
+/*  THE MAIN PLAYLIST
+############################### */
+/* line 120, ../sass/main.scss */
+.playlist {
+  margin: 0 auto;
+  max-width: 854px;
+  width: 100%;
+}
+/* line 125, ../sass/main.scss */
+.playlist img {
+  padding-left: 7px;
+  cursor: pointer;
+}
+
 @media (max-width: 624px) {
-  /* line 113, ../sass/main.scss */
+  /* line 133, ../sass/main.scss */
   body {
     margin: 15px;
   }
 
-  /* line 116, ../sass/main.scss */
+  /* line 136, ../sass/main.scss */
   .caption {
     margin-top: 40px;
   }
 
-  /* line 119, ../sass/main.scss */
+  /* line 139, ../sass/main.scss */
   .vid-list-container {
     padding-bottom: 20px;
   }
 
   /* reposition left/right arrows */
-  /* line 124, ../sass/main.scss */
+  /* line 144, ../sass/main.scss */
   .arrows {
     position: relative;
     margin: 0 auto;
     width: 96px;
     top: 9%;
   }
-  /* line 129, ../sass/main.scss */
+  /* line 149, ../sass/main.scss */
   .arrows .arrow-left, .arrows .arrow-right {
     top: -17px;
   }
-  /* line 133, ../sass/main.scss */
+  /* line 153, ../sass/main.scss */
   .arrows .arrow-left {
     left: 0;
   }
-  /* line 136, ../sass/main.scss */
+  /* line 156, ../sass/main.scss */
   .arrows .arrow-right {
     right: 0;
   }

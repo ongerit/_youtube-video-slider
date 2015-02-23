@@ -15,7 +15,7 @@ $(document).ready(function () {
     };
 
     function yApi() {
-        var playListURL = 'https://gdata.youtube.com/feeds/api/playlists/PLE9LPsE6cZ1YZW3Ev2JfKFzQUdPuMhdEl?v=2&alt=json&callback=?';
+        var playListURL = 'https://gdata.youtube.com/feeds/api/playlists/'+playlistId+'?v=2&alt=json&callback=?';
         var videoURL = 'https://www.youtube.com/watch?v=';
         $.getJSON(playListURL, function (data) {
             var list_data = "";
@@ -30,8 +30,46 @@ $(document).ready(function () {
                 list_data += '<li class="vid-item" ' + videoSwitch + '><div class="thumb"><img alt="' + feedTitle + '" src="' + thumb + '"> </div><div class="desc">' + feedTitle + '</li>';
             });
             $(list_data).appendTo(".vid-list");
+            
         });
     };
+    
+    // function playlistCtrl(){
+    //     var playlistId;
+        
+
+    // };
+        
+        var showList;
+        var playlistId;
+        var currentPlayList;
+        $(document).click(function() {
+            $('#p1').click(function(){
+            showList = true;
+            $(".vid-list").empty();
+            playlistId= 'PLEpfh9jiEpYQJWMW2EF2PgCBhz2SQu6Ld';
+            yApi(playlistId);
+                
+            });
+        
+            $('#p2').click(function(){
+            showList = true;
+            $(".vid-list").empty();
+            playlistId= 'PLE9LPsE6cZ1YZW3Ev2JfKFzQUdPuMhdEl';
+            yApi(playlistId);
+                
+            });
+            
+        })
+
+        
+        if (showList == true){
+            
+        };
+
+    
+    // playlistCtrl();
     sliderArrows();
-    yApi()
+    yApi();
+
 });
