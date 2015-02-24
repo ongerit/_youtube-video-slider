@@ -59,8 +59,20 @@ $(document).ready(function () {
     });
 };
 
+
+
+
+//Restart Vid Container
+
+        function restart() {
+            $(".vid-list-container").stop().animate({
+                scrollLeft: "-=10036"
+            }, 750);
+        }
+
         var playlistId;
         $('#p1').click(function(){
+            restart() 
             showList = true;
             playlistId= 'PL5F394CB9AB8A3519';
             yApi(playlistId);
@@ -68,6 +80,7 @@ $(document).ready(function () {
         });
     
         $('#p2').click(function(){
+            restart() 
             showList = true;
             playlistId= 'PLE9LPsE6cZ1YZW3Ev2JfKFzQUdPuMhdEl';
             yApi(playlistId);
@@ -75,6 +88,7 @@ $(document).ready(function () {
         });
         
         $('#p3').click(function(){
+            restart() 
             showList = true;
             playlistId= 'PLEpfh9jiEpYQJWMW2EF2PgCBhz2SQu6Ld';
             yApi(playlistId);
@@ -83,11 +97,8 @@ $(document).ready(function () {
 
     introApi();
     sliderArrows();
-    $('.arrows').show();
-
     
-    
-
+   $('.arrows').fadeIn(3000);
 });
 
 
