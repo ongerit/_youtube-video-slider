@@ -6,6 +6,9 @@ body {
   background: #ddd;
   font-family: Arial, Helvetica, sans-serif;
 }
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Toughmudder', sans-serif;
+}
 
 .video-wrapper {
   width: 100%;
@@ -127,6 +130,15 @@ body {
     cursor: pointer;
   }
 }
+
+
+/*  FADE IN
+############################### */
+@keyframes fdsseq { 100% { opacity: 1; } }
+#fd img { animation: fdsseq .5s forwards; }
+#fd img:nth-child(1) { animation-delay: .5s; }
+#fd img:nth-child(2) { animation-delay: 1s; }
+#fd img:nth-child(3) { animation-delay: 1.5s; }
 
 
 @media (max-width: 624px) {
