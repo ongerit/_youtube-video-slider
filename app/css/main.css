@@ -316,7 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* line 50, ../sass/main.scss */
 .vid-list-container .vid-list {
-  width: 10048px;
+  width: 20048px;
   position: relative;
   top: 0;
   left: 0;
@@ -360,8 +360,9 @@ h1, h2, h3, h4, h5, h6 {
 .arrows {
   position: relative;
   width: 100%;
+  display: none;
 }
-/* line 95, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .arrows .arrow-left, .arrows .arrow-right {
   position: absolute;
   background: #777;
@@ -371,21 +372,21 @@ h1, h2, h3, h4, h5, h6 {
   top: -170px;
   height: 150px;
 }
-/* line 103, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .arrows .arrow-left:hover, .arrows .arrow-right:hover {
   background: #FF6700;
 }
-/* line 106, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .arrows .arrow-left .fa-lg, .arrows .arrow-right .fa-lg {
   line-height: 4.0em;
   font-size: 2.5em;
 }
-/* line 111, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .arrows .arrow-left {
   left: -25px;
   z-index: 99;
 }
-/* line 115, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .arrows .arrow-right {
   right: -25px;
   z-index: 100;
@@ -393,78 +394,51 @@ h1, h2, h3, h4, h5, h6 {
 
 /*  THE MAIN PLAYLIST
 ############################### */
-/* line 123, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .playlist {
   margin: 0 auto;
   max-width: 854px;
   width: 100%;
 }
-/* line 128, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .playlist img {
   padding-left: 7px;
   cursor: pointer;
 }
 
-/*  FADE IN
-############################### */
-@keyframes fdsseq {
-  100% {
-    opacity: 1;
-  }
-}
-/* line 138, ../sass/main.scss */
-#fd img {
-  animation: fdsseq .5s forwards;
-}
-
-/* line 139, ../sass/main.scss */
-#fd img:nth-child(1) {
-  animation-delay: .5s;
-}
-
-/* line 140, ../sass/main.scss */
-#fd img:nth-child(2) {
-  animation-delay: 1s;
-}
-
-/* line 141, ../sass/main.scss */
-#fd img:nth-child(3) {
-  animation-delay: 1.5s;
-}
-
 @media (max-width: 624px) {
-  /* line 145, ../sass/main.scss */
+  /* line 137, ../sass/main.scss */
   body {
     margin: 15px;
   }
 
-  /* line 148, ../sass/main.scss */
+  /* line 140, ../sass/main.scss */
   .caption {
     margin-top: 40px;
   }
 
-  /* line 151, ../sass/main.scss */
+  /* line 143, ../sass/main.scss */
   .vid-list-container {
     padding-bottom: 20px;
   }
 
   /* reposition left/right arrows */
-  /* line 156, ../sass/main.scss */
+  /* line 148, ../sass/main.scss */
   .arrows {
     position: relative;
     margin: 0 auto;
     width: 96px;
     top: 9%;
   }
-  /* line 161, ../sass/main.scss */
+  /* line 153, ../sass/main.scss */
   .arrows .arrow-left, .arrows .arrow-right {
     top: -17px;
   }
-  /* line 165, ../sass/main.scss */
+  /* line 157, ../sass/main.scss */
   .arrows .arrow-left {
     left: 0;
   }
-  /* line 168, ../sass/main.scss */
+  /* line 160, ../sass/main.scss */
   .arrows .arrow-right {
     right: 0;
   }

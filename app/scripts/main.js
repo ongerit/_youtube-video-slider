@@ -12,10 +12,11 @@ $(document).ready(function () {
                 scrollLeft: "-=336"
             }, 750);
         });
+        
     };
 
     function introApi() {
-        var playListURL = 'https://gdata.youtube.com/feeds/api/playlists/PLEpfh9jiEpYQJWMW2EF2PgCBhz2SQu6Ld?v=2&alt=json&callback=?';
+        var playListURL = 'https://gdata.youtube.com/feeds/api/playlists/PL5F394CB9AB8A3519?v=2&alt=json&callback=?';
         var videoURL = 'https://www.youtube.com/watch?v=';
         $.getJSON(playListURL, function (data) {
             var list_data = "";
@@ -37,7 +38,7 @@ $(document).ready(function () {
     };
     
     function yApi() {
-    var playListURL = 'https://gdata.youtube.com/feeds/api/playlists/'+playlistId+'?v=2&alt=json&callback=?';
+    var playListURL = 'https://gdata.youtube.com/feeds/api/playlists/'+playlistId+'?v=2&alt=json&callback=?&max-results=10';
     var videoURL = 'https://www.youtube.com/watch?v=';
     $.getJSON(playListURL, function (data) {
         var list_data = "";
@@ -49,7 +50,7 @@ $(document).ready(function () {
             var url = videoURL + videoID;
             var thumb = "https://img.youtube.com/vi/" + videoID + "/1.jpg";
             var videoSwitch = 'onClick=document.getElementById("vid_frame").src="https://youtube.com/embed/' + videoID + '?autoplay=1&rel=0&showinfo=0&autohide=1"';
-            list_data += '<li class="vid-item" ' + videoSwitch + '><div class="thumb"><img alt="' + feedTitle + '" src="' + thumb + '"> </div><div class="desc">' + feedTitle + '</li>';
+            list_data += '<li class="vid-item uk-animation-scale-up" ' + videoSwitch + '><div class="thumb"><img alt="' + feedTitle + '" src="' + thumb + '"> </div><div class="desc">' + feedTitle + '</li>';
         });
         
         $(".vid-list").empty();
@@ -57,15 +58,11 @@ $(document).ready(function () {
         
     });
 };
-            
-        
-        var showList;
+
         var playlistId;
-        var currentPlayList;
         $('#p1').click(function(){
             showList = true;
-            playlistId= 'PLEpfh9jiEpYQJWMW2EF2PgCBhz2SQu6Ld';
-            
+            playlistId= 'PL5F394CB9AB8A3519';
             yApi(playlistId);
             
         });
@@ -76,9 +73,23 @@ $(document).ready(function () {
             yApi(playlistId);
             
         });
+        
+        $('#p3').click(function(){
+            showList = true;
+            playlistId= 'PLEpfh9jiEpYQJWMW2EF2PgCBhz2SQu6Ld';
+            yApi(playlistId);
             
-            
-    sliderArrows();
+        });
+
     introApi();
+    sliderArrows();
+    $('.arrows').show();
+
+    
+    
 
 });
+
+
+/*  Scrollspy
+############################### */

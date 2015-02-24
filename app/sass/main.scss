@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6{
   padding-bottom: 20px;
 
   .vid-list {
-    width: 10048px;
+    width: 20048px;
     position: relative;
     top:0;
     left: 0;
@@ -91,6 +91,7 @@ h1,h2,h3,h4,h5,h6{
 .arrows {
   position:relative;
   width: 100%;
+  display: none;
 
   .arrow-left , .arrow-right{
     position: absolute;
@@ -130,15 +131,6 @@ h1,h2,h3,h4,h5,h6{
     cursor: pointer;
   }
 }
-
-
-/*  FADE IN
-############################### */
-@keyframes fdsseq { 100% { opacity: 1; } }
-#fd img { animation: fdsseq .5s forwards; }
-#fd img:nth-child(1) { animation-delay: .5s; }
-#fd img:nth-child(2) { animation-delay: 1s; }
-#fd img:nth-child(3) { animation-delay: 1.5s; }
 
 
 @media (max-width: 624px) {
