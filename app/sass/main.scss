@@ -12,7 +12,7 @@ body {
 
 .video-wrapper {
   width: 100%;
-  max-width: 854px;
+  max-width: 960px;
   margin: 0 auto;
   
   h1,h2,h3,h4,h5,h6{
@@ -59,7 +59,7 @@ body {
   .vid-item {
     display: block;
     width: 190px;
-    height: 148px;
+    height: 150px;
     float: left;
     margin: 0 15px 0 0 ;
     background:#000000;
@@ -78,7 +78,7 @@ body {
 
 .vid-item {
   .desc {
-    font-family: 'Toughmudder', sans-serif;;
+    font-family: "ToughMudder",Impact,Charcoal,sans-serif;
     color: #ffffff;
     font-size: 1.5em;
     margin: 5px 0 5px 5px;
@@ -101,7 +101,7 @@ body {
     background: #777;
     color: #fff;
     cursor: pointer;
-    padding: 5px;
+    padding: 0 1% 0 1%;
     top: -170px;
     height: 150px;
     &:hover {
@@ -126,7 +126,7 @@ body {
 ############################### */
 .playlist{
   margin: 0 auto;
-  max-width: 854px;
+  max-width: 960px;
   width: 100%;
   
   img{

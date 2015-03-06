@@ -37,6 +37,8 @@ $(document).ready(function () {
         });
     };
     
+    //function for scrolling to anchor
+    
     function yApi() {
     var playListURL = 'https://gdata.youtube.com/feeds/api/playlists/'+playlistId+'?v=2&alt=json&callback=?&max-results=10';
     var videoURL = 'https://www.youtube.com/watch?v=';
@@ -65,6 +67,11 @@ $(document).ready(function () {
 //Restart Vid Container
 
         function restart() {
+            //scroll to the top
+            $('html, body').animate({
+                scrollTop: $("#vid_frame").offset().top
+            }, 1500);
+            //restarts the player
             $(".vid-list-container").stop().animate({
                 scrollLeft: "-=10036"
             }, 750);
@@ -76,6 +83,7 @@ $(document).ready(function () {
             showList = true;
             playlistId= 'PL5F394CB9AB8A3519';
             yApi(playlistId);
+            
             
         });
     

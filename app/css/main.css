@@ -274,7 +274,7 @@ body {
 /* line 13, ../sass/main.scss */
 .video-wrapper {
   width: 100%;
-  max-width: 854px;
+  max-width: 960px;
   margin: 0 auto;
 }
 /* line 18, ../sass/main.scss */
@@ -324,7 +324,7 @@ body {
 .vid-list-container .vid-item {
   display: block;
   width: 190px;
-  height: 148px;
+  height: 150px;
   float: left;
   margin: 0 15px 0 0;
   background: #000000;
@@ -344,7 +344,7 @@ body {
 
 /* line 80, ../sass/main.scss */
 .vid-item .desc {
-  font-family: 'Toughmudder', sans-serif;
+  font-family: "ToughMudder",Impact,Charcoal,sans-serif;
   color: #ffffff;
   font-size: 1.5em;
   margin: 5px 0 5px 5px;
@@ -369,7 +369,7 @@ body {
   background: #777;
   color: #fff;
   cursor: pointer;
-  padding: 5px;
+  padding: 0 1% 0 1%;
   top: -170px;
   height: 150px;
 }
@@ -398,7 +398,7 @@ body {
 /* line 127, ../sass/main.scss */
 .playlist {
   margin: 0 auto;
-  max-width: 854px;
+  max-width: 960px;
   width: 100%;
 }
 /* line 132, ../sass/main.scss */
