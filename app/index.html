@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>_youtube slider</title>
     <meta name="description" content="">
@@ -8,48 +8,41 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <!--<link href='https://toughmudder.cachefly.net/sites/all/themes/tough_mudder/fonts/ToughMudderWeb.woff' rel='stylesheet' type='text/css'>-->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-      <!-- bower:css -->
-      <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-      <!-- endbower -->
-      <!-- endbuild -->
-      <!-- build:css(.tmp) styles/main.css -->
-      <link rel="stylesheet" href="styles/app.css">
-      <!-- endbuild -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endbuild -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.17.0/css/uikit.min.css">
     <link rel="stylesheet" href="css/main.css">
-      <!-- endbuild -->
-  </head>
-  <body>
+    <!-- endbuild -->
+</head>
 
-  <div class="video-wrapper">
-      <div class="vid-container">
-          <iframe
-                  id="vid_frame"
-                  src="https://www.youtube.com/embed/GHXd4_iYw1s?rel=0&showinfo=0&autohide=1"
-                  frameborder="0" width="560" height="315">
-          </iframe>
-      </div>
-      <div class="vid-list-container">
+<body>
+    <div class="video-wrapper">
+        <div class="vid-container">
+            <iframe id="vid_frame" src="https://www.youtube.com/embed/GHXd4_iYw1s?rel=0&showinfo=0&autohide=1" frameborder="0" width="560" height="315">
+            </iframe>
+        </div>
+        <div class="vid-list-container">
             <div class="vid-list"> </div>
-      </div>
-      
-      <div class="arrows uk-animation-scale">
-          <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
-          <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
-      </div>
-      
-    <div data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: false, delay: 500, target: '.down'}" class="playlist" id="fd">
-      <h1>Playlists</h1>
-      <img class="down" id="p1" src="http://placehold.it/275x150&text=Finish+Strong+Series">
-      <img class="down" id="p2" src="http://placehold.it/275x150&text=Overcome+All+Obstacles">
-      <img class="down" id="p3" src="http://placehold.it/275x150&text=Mudders+Of+2014">
+        </div>
+        <div class="arrows uk-animation-scale">
+            <div class="arrow-left"><i class="fa fa-chevron-left fa-lg"></i></div>
+            <div class="arrow-right"><i class="fa fa-chevron-right fa-lg"></i></div>
+        </div>
+        <div data-uk-scrollspy="{cls:'uk-animation-slide-top', repeat: false, delay: 500, target: '.down'}" class="playlist" id="fd">
+            <h1>Playlists</h1>
+            <img class="down" id="p1" src="http://placehold.it/275x150&text=Finish+Strong+Series">
+            <img class="down" id="p2" src="http://placehold.it/275x150&text=Overcome+All+Obstacles">
+            <img class="down" id="p3" src="http://placehold.it/275x150&text=Mudders+Of+2014">
+        </div>
     </div>
-  </div>
-  
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="scripts/main.js" ></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.17.0/js/uikit.min.js" ></script>
-
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.17.0/js/uikit.min.js"></script>
 </body>
 </html>
